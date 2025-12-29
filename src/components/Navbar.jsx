@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-1 group cursor-pointer">
               <div>
                 <img
-                  src="/logo.png"
+                  src={`${import.meta.env.BASE_URL}logo.png`}
                   alt="CodeFlow"
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
