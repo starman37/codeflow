@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <AnimatePresence>
         {isMenuOpen && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }} className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
             <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
               <a
                 href="#features"
